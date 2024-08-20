@@ -12,7 +12,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
         <script>
-            VANTA.BIRDS({
+            let vantaEffect = VANTA.BIRDS({
                 el: "#animated-background",
                 mouseControls: true,
                 touchControls: true,
@@ -22,13 +22,12 @@
                 scale: 1.0,
                 scaleMobile: 1.0,
                 birdSize: 1.0,
-                quantity: 3.0,
+                quantity: 2.0,
             });
 
-            // Adjust the background when the window is resized
+            // Handle window resize
             window.addEventListener("resize", () => {
-                VANTA.BIRDS({
-                    el: "#animated-background",
+                vantaEffect.setOptions({
                     minHeight: window.innerHeight,
                     minWidth: window.innerWidth,
                 });
