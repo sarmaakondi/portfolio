@@ -1,9 +1,16 @@
+import NavBar from "./components/NavBar";
+import All from "./components/All";
+import About from "./components/About";
+import Work from "./components/Work";
 import "./App.css";
 
 function App() {
     return (
         <div>
-            <h1>Portfolio WIP</h1>
+            <NavBar />
+            <All />
+            <About />
+            <Work />
         </div>
     );
 }
