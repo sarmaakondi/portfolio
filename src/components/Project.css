@@ -14,10 +14,20 @@
     box-shadow: 0 4px 16px hsla(0, 0%, 33%, 0.3);
 }
 
+.project-name-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .project-name {
     font-size: 22px;
     font-weight: 500;
     text-transform: uppercase;
+}
+
+.project-explore {
+    cursor: pointer;
 }
 
 .technology-container {
