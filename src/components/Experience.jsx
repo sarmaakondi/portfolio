@@ -7,7 +7,7 @@ const Experience = () => {
             className="experience-container"
             initial={{ opacity: 0, y: 250 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}>
+            transition={{ duration: 0.4, ease: "easeOut" }}>
             <div className="experience-header">
                 <p>12+ years of</p>
                 <h2>Experience</h2>
