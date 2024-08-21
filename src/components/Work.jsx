@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import Experience from "./Experience";
 import Resume from "./Resume";
 import Project from "./Project";
-import ExpenseTrackerImage from "../../public/ExpenseTracker.webp";
-import WorldOfWordsImage from "../../public/WorldOfWords.webp";
-import EchoImage from "../../public/Echo.webp";
+import ExpenseTrackerImage from "../assets/ExpenseTracker.webp";
+import WorldOfWordsImage from "../assets/WorldOfWords.webp";
+import EchoImage from "../assets/Echo.webp";
 import "./Work.css";
 
 const projectDetails = {

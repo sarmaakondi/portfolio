@@ -1,4 +1,4 @@
-import ProfilePic from "../../public/ProfilePic.webp";
+import ProfilePic from "../assets/ProfilePic.webp";
 import "./AboutMe.css";
 
 const AboutMe = () => {
