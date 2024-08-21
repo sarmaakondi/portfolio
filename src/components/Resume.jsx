@@ -1,12 +1,13 @@
 import { useState } from "react";
 import UseAnimations from "react-useanimations";
 import download from "react-useanimations/lib/download";
-import visibility from "react-useanimations/lib/visibility";
+import explore from "react-useanimations/lib/explore";
+import MyResume from "../assets/SarmaAkondiResume.pdf";
 import "./Resume.css";
 
 const Resume = () => {
     const [isDownloadHovered, setIsDownloadHovered] = useState(false);
-    const [isViewHovered, setIsViewHovered] = useState(false);
+    const [isExploreHovered, setIsExploreHovered] = useState(false);
 
     const handleDownloadHoverEnter = () => {
         setIsDownloadHovered(true);
@@ -16,12 +17,12 @@ const Resume = () => {
         setIsDownloadHovered(false);
     };
 
-    const handleViewHoverEnter = () => {
-        setIsViewHovered(true);
+    const handleExploreHoverEnter = () => {
+        setIsExploreHovered(true);
     };
 
-    const handleViewHoverLeave = () => {
-        setIsViewHovered(false);
+    const handleExploreHoverLeave = () => {
+        setIsExploreHovered(false);
     };
 
     return (
@@ -31,7 +32,9 @@ const Resume = () => {
                 <h2>Resume</h2>
             </div>
             <div className="resume-controls-container">
-                <div
+                <a
+                    href={MyResume}
+                    download
                     className="resume-download"
                     onMouseEnter={handleDownloadHoverEnter}
                     onMouseLeave={handleDownloadHoverLeave}>
@@ -42,17 +45,17 @@ const Resume = () => {
                         strokeColor="#4a4a4a"
                         autoplay={isDownloadHovered}
                     />
-                </div>
+                </a>
                 <div
-                    className="resume-view"
-                    onMouseEnter={handleViewHoverEnter}
-                    onMouseLeave={handleViewHoverLeave}>
+                    className="resume-explore"
+                    onMouseEnter={handleExploreHoverEnter}
+                    onMouseLeave={handleExploreHoverLeave}>
                     <UseAnimations
-                        key={isViewHovered === true}
-                        animation={visibility}
+                        key={isExploreHovered === true}
+                        animation={explore}
                         size={40}
                         strokeColor="#4a4a4a"
-                        autoplay={isViewHovered}
+                        autoplay={isExploreHovered}
                     />
                 </div>
             </div>
