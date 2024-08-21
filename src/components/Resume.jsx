@@ -46,7 +46,9 @@ const Resume = () => {
                         autoplay={isDownloadHovered}
                     />
                 </a>
-                <div
+                <a
+                    href="https://drive.google.com/file/d/1wLqOgMxjb0snuY9nNVB8jaHqCyHgLLTO/view?usp=sharing"
+                    target="_blank"
                     className="resume-explore"
                     onMouseEnter={handleExploreHoverEnter}
                     onMouseLeave={handleExploreHoverLeave}>
@@ -57,7 +59,7 @@ const Resume = () => {
                         strokeColor="#4a4a4a"
                         autoplay={isExploreHovered}
                     />
-                </div>
+                </a>
             </div>
         </div>
     );
