@@ -5,7 +5,7 @@
         <link rel="icon" type="image/svg+xml" href="/portfolio/favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Sarma Akondi - Portfolio</title>
-      <script type="module" crossorigin src="/portfolio/assets/index-BO5drmDH.js"></script>
+      <script type="module" crossorigin src="/portfolio/assets/index-DHoc2m2R.js"></script>
       <link rel="stylesheet" crossorigin href="/portfolio/assets/index-BIImG9d_.css">
     </head>
     <body>
@@ -14,7 +14,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
         <script>
-            VANTA.BIRDS({
+            let vantaEffect = VANTA.BIRDS({
                 el: "#animated-background",
                 mouseControls: true,
                 touchControls: true,
@@ -27,10 +27,9 @@
                 quantity: 3.0,
             });
 
-            // Adjust the background when the window is resized
+            // Handle window resize
             window.addEventListener("resize", () => {
-                VANTA.BIRDS({
-                    el: "#animated-background",
+                vantaEffect.setOptions({
                     minHeight: window.innerHeight,
                     minWidth: window.innerWidth,
                 });
