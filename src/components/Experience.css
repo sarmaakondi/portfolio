@@ -15,13 +15,11 @@
 
 .experience-header p {
     font-size: 12px;
-    font-weight: 500;
     color: hsl(0, 0%, 40%);
 }
 
 .experience-header h2 {
     font-size: 22px;
-    font-weight: 500;
 }
 
 .experience-entry {
@@ -32,7 +30,6 @@
 
 .experience-job-title {
     font-size: 28px;
-    font-weight: 500;
 }
 
 .experience-company-details {
@@ -41,12 +38,10 @@
 
 .experience-company-name {
     font-size: 14px;
-    font-weight: 600;
     color: hsl(0, 0%, 20%);
 }
 
 .experience-company-tenure {
     font-size: 12px;
-    font-weight: 600;
     color: hsl(0, 0%, 40%);
 }
