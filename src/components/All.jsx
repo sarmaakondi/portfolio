@@ -1,5 +1,7 @@
+import "./All.css";
+
 const All = () => {
-    return <h1>All</h1>;
+    return <h1 className="all-title">All</h1>;
 };
 
 export default All;
