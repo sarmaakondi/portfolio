@@ -30,7 +30,7 @@ const Resume = () => {
             className="resume-container"
             initial={{ opacity: 0, y: 150 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.4, ease: "easeOut" }}>
+            transition={{ delay: 0.3, duration: 0.4, ease: "easeOut" }}>
             <div className="resume-header">
                 <p>2024 CV</p>
                 <h2>Resume</h2>

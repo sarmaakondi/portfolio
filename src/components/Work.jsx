@@ -5,8 +5,12 @@ import "./Work.css";
 const Work = () => {
     return (
         <div className="work-container">
-            <Experience />
-            <Resume />
+            <div className="work-item">
+                <Experience />
+            </div>
+            <div className="work-item">
+                <Resume />
+            </div>
         </div>
     );
 };
