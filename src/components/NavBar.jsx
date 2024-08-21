@@ -8,13 +8,13 @@ const NavBar = () => {
 
     useEffect(() => {
         switch (location.pathname) {
-            case "/portfolio/all":
+            case "/all":
                 setSliderStyle({ transform: "translateX(0)" });
                 break;
-            case "/portfolio/about":
+            case "/about":
                 setSliderStyle({ transform: "translateX(100px)" });
                 break;
-            case "/portfolio/work":
+            case "/work":
                 setSliderStyle({ transform: "translateX(200px)" });
                 break;
             default:
@@ -28,7 +28,7 @@ const NavBar = () => {
             <div className="slider" style={sliderStyle}></div>
             <div>
                 <NavLink
-                    to="/portfolio/all"
+                    to="/all"
                     className={({ isActive }) =>
                         isActive ? "nav-link active-link" : "nav-link"
                     }>
@@ -39,7 +39,7 @@ const NavBar = () => {
             </div>
             <div>
                 <NavLink
-                    to="/portfolio/about"
+                    to="/about"
                     className={({ isActive }) =>
                         isActive ? "nav-link active-link" : "nav-link"
                     }>
@@ -50,7 +50,7 @@ const NavBar = () => {
             </div>
             <div>
                 <NavLink
-                    to="/portfolio/work"
+                    to="/work"
                     className={({ isActive }) =>
                         isActive ? "nav-link active-link" : "nav-link"
                     }>

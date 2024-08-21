@@ -10,7 +10,7 @@ const Hero = () => {
             window.location.pathname === "/portfolio" ||
             window.location.pathname === "/portfolio/"
         ) {
-            navigate("/portfolio/all");
+            navigate("/all");
         }
     }, [navigate]);
 
