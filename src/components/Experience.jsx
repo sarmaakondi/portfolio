@@ -1,8 +1,13 @@
+import { motion } from "framer-motion";
 import "./Experience.css";
 
 const Experience = () => {
     return (
-        <div className="experience-container">
+        <motion.div
+            className="experience-container"
+            initial={{ opacity: 0, x: -250, y: 250 }}
+            animate={{ opacity: 1, x: 0, y: 0 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}>
             <div className="experience-header">
                 <p>12+ years of</p>
                 <h2>Experience</h2>
@@ -39,7 +44,7 @@ const Experience = () => {
                     <p className="experience-company-tenure">2010 - 2011</p>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
