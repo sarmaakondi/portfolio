@@ -45,6 +45,7 @@ const Social = () => {
                         key={isGithubHovered === true}
                         animation={github}
                         size={100}
+                        strokeColor="#181717"
                         autoplay={isGithubHovered}
                     />
                 </div>
@@ -55,6 +56,7 @@ const Social = () => {
                         key={isLinkedInHovered === true}
                         animation={linkedin}
                         size={100}
+                        strokeColor="#0077B5"
                         autoplay={isLinkedInHovered}
                     />
                 </div>
@@ -65,6 +67,7 @@ const Social = () => {
                         key={isMailHovered === true}
                         animation={mail}
                         size={100}
+                        strokeColor="#D93025"
                         autoplay={isMailHovered}
                     />
                 </div>

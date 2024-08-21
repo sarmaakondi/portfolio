@@ -39,7 +39,7 @@ const Resume = () => {
                         key={isDownloadHovered === true}
                         animation={download}
                         size={40}
-                        strokeColor="gray"
+                        strokeColor="#4a4a4a"
                         autoplay={isDownloadHovered}
                     />
                 </div>
@@ -51,7 +51,7 @@ const Resume = () => {
                         key={isViewHovered === true}
                         animation={visibility}
                         size={40}
-                        strokeColor="gray"
+                        strokeColor="#4a4a4a"
                         autoplay={isViewHovered}
                     />
                 </div>

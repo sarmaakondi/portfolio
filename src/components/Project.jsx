@@ -27,7 +27,7 @@ const Job = ({ project }) => {
                         key={isHovered === true}
                         animation={explore}
                         size={40}
-                        strokeColor="gray"
+                        strokeColor="#4a4a4a"
                         autoplay={isHovered}
                     />
                 </div>
