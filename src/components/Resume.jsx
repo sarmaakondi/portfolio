@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
 import UseAnimations from "react-useanimations";
 import download from "react-useanimations/lib/download";
 import visibility from "react-useanimations/lib/visibility";
@@ -26,11 +25,7 @@ const Resume = () => {
     };
 
     return (
-        <motion.div
-            className="resume-container"
-            initial={{ opacity: 0, y: 150 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.4, ease: "easeOut" }}>
+        <div className="resume-container">
             <div className="resume-header">
                 <p>2024 CV</p>
                 <h2>Resume</h2>
@@ -61,7 +56,7 @@ const Resume = () => {
                     />
                 </div>
             </div>
-        </motion.div>
+        </div>
     );
 };
 

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Experience from "./Experience";
 import Resume from "./Resume";
 import Project from "./Project";
@@ -27,15 +28,38 @@ const projectDetails = {
 const Work = () => {
     return (
         <div className="work-container">
-            <div className="work-item">
+            <motion.div
+                className="work-item"
+                initial={{ opacity: 0, x: 500, y: 250 }}
+                animate={{ opacity: 1, x: 0, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}>
                 <Experience />
-                <Project project={projectDetails.worldOfWords} />
-            </div>
-            <div className="work-item">
+                <motion.div
+                    initial={{ opacity: 0, x: 250, y: 350 }}
+                    animate={{ opacity: 1, x: 0, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}>
+                    <Project project={projectDetails.worldOfWords} />
+                </motion.div>
+            </motion.div>
+            <motion.div
+                className="work-item"
+                initial={{ opacity: 0, x: -500, y: -50 }}
+                animate={{ opacity: 1, x: 0, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}>
                 <Resume />
-                <Project project={projectDetails.expenseTracker} />
-                <Project project={projectDetails.echo} />
-            </div>
+                <motion.div
+                    initial={{ opacity: 0, x: -250, y: -50 }}
+                    animate={{ opacity: 1, x: 0, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}>
+                    <Project project={projectDetails.expenseTracker} />
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, x: -350, y: -50 }}
+                    animate={{ opacity: 1, x: 0, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}>
+                    <Project project={projectDetails.echo} />
+                </motion.div>
+            </motion.div>
         </div>
     );
 };
