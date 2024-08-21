@@ -1,5 +1,12 @@
+import Experience from "./Experience";
+import "./Work.css";
+
 const Work = () => {
-    return <h1>Work</h1>;
+    return (
+        <div className="work-container">
+            <Experience />
+        </div>
+    );
 };
 
 export default Work;

@@ -1,0 +1,52 @@
+.experience-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: hsl(0, 0%, 92%);
+    border-radius: 24px;
+    padding: 40px 24px;
+}
+
+.experience-header {
+    text-transform: uppercase;
+}
+
+.experience-header p {
+    font-size: 12px;
+    font-weight: 500;
+    color: hsl(0, 0%, 40%);
+}
+
+.experience-header h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.experience-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.experience-job-title {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.experience-company-details {
+    text-align: right;
+}
+
+.experience-company-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(0, 0%, 20%);
+}
+
+.experience-company-tenure {
+    font-size: 12px;
+    font-weight: 600;
+    color: hsl(0, 0%, 40%);
+}
