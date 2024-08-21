@@ -17,7 +17,7 @@
 .project-name-container {
     display: flex;
     align-items: center;
-    gap: 8px;
+    justify-content: space-between;
 }
 
 .project-name {
@@ -25,14 +25,20 @@
     text-transform: uppercase;
 }
 
-.project-explore {
+.project-links-container {
+    display: flex;
+    gap: 40px;
+}
+
+.project-explore,
+.project-github {
     cursor: pointer;
 }
 
 .technology-container {
     list-style: none;
     display: flex;
-    gap: 16px;
+    gap: 8px;
 }
 
 .technology-name {

@@ -11,17 +11,24 @@ const projectDetails = {
     expenseTracker: {
         name: "Expense Tracker",
         image: ExpenseTrackerImage,
-        tech: ["HTML", "CSS", "JavaScript", "EJS", "MongoDB"],
+        tech: ["HTML", "CSS", "JavaScript", "Express", "EJS", "MongoDB"],
+        githubURL:
+            "https://github.com/sarmaakondi/project-2-expense-tracker/tree/main",
+        liveURL: "https://expense-tracker-c7dg.onrender.com/",
     },
     worldOfWords: {
         name: "World of Words",
         image: WorldOfWordsImage,
         tech: ["React", "Express", "CSS", "Framer Motion", "MongoDB"],
+        githubURL: "https://github.com/sarmaakondi/word-nerd-herd-client",
+        liveURL: "https://world-of-words-client.onrender.com/",
     },
     echo: {
         name: "Echo",
         image: EchoImage,
         tech: ["React", "CSS", "Django", "PostgreSQL"],
+        githubURL: "https://github.com/sarmaakondi/echo-client",
+        liveURL: "https://echo-client-gry3.onrender.com/feed",
     },
 };
 

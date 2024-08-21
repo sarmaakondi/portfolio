@@ -1,17 +1,27 @@
 import UseAnimations from "react-useanimations";
+import github from "react-useanimations/lib/github";
 import explore from "react-useanimations/lib/explore";
 import "./Project.css";
 import { useState } from "react";
 
 const Job = ({ project }) => {
-    const [isHovered, setIsHovered] = useState(false);
+    const [isGithubHovered, setIsGithubHovered] = useState(false);
+    const [isExploreHovered, setIsExploreHovered] = useState(false);
 
-    const handleMouseEnter = () => {
-        setIsHovered(true);
+    const handleGithubEnter = () => {
+        setIsGithubHovered(true);
     };
 
-    const handleMouseLeave = () => {
-        setIsHovered(false);
+    const handleGithubLeave = () => {
+        setIsGithubHovered(false);
+    };
+
+    const handleExploreEnter = () => {
+        setIsExploreHovered(true);
+    };
+
+    const handleExploreLeave = () => {
+        setIsExploreHovered(false);
     };
 
     return (
@@ -19,17 +29,35 @@ const Job = ({ project }) => {
             <img className="project-image" src={project.image} alt="" />
             <div className="project-name-container">
                 <h2 className="project-name">{project.name}</h2>
-                <div
-                    className="project-explore"
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}>
-                    <UseAnimations
-                        key={isHovered === true}
-                        animation={explore}
-                        size={40}
-                        strokeColor="#4a4a4a"
-                        autoplay={isHovered}
-                    />
+                <div className="project-links-container">
+                    <a
+                        href={project.githubURL}
+                        target="_blank"
+                        className="project-github"
+                        onMouseEnter={handleGithubEnter}
+                        onMouseLeave={handleGithubLeave}>
+                        <UseAnimations
+                            key={isGithubHovered === true}
+                            animation={github}
+                            size={40}
+                            strokeColor="#4a4a4a"
+                            autoplay={isGithubHovered}
+                        />
+                    </a>
+                    <a
+                        href={project.liveURL}
+                        target="_blank"
+                        className="project-explore"
+                        onMouseEnter={handleExploreEnter}
+                        onMouseLeave={handleExploreLeave}>
+                        <UseAnimations
+                            key={isExploreHovered === true}
+                            animation={explore}
+                            size={40}
+                            strokeColor="#4a4a4a"
+                            autoplay={isExploreHovered}
+                        />
+                    </a>
                 </div>
             </div>
             <ul className="technology-container">
