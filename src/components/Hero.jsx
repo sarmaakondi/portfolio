@@ -6,7 +6,10 @@ const Hero = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (window.location.pathname === "/portfolio") {
+        if (
+            window.location.pathname === "/portfolio" ||
+            window.location.pathname === "/portfolio/"
+        ) {
             navigate("/portfolio/all");
         }
     }, [navigate]);
