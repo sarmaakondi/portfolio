@@ -6,6 +6,7 @@ import ExpenseTrackerImage from "../assets/ExpenseTracker.webp";
 import WorldOfWordsImage from "../assets/WorldOfWords.webp";
 import EchoImage from "../assets/Echo.webp";
 import KnowNativeImage from "../assets/KnowNatvie.webp";
+import steampocalypseImage from "../assets/Steampocalypse.webp";
 import "./Work.css";
 
 const projectDetails = {
@@ -38,6 +39,13 @@ const projectDetails = {
         githubURL: "https://github.com/AbigailDawson/knownative",
         liveURL: "#",
     },
+    steampocalypse: {
+        name: "Steampocalypse",
+        image: steampocalypseImage,
+        tech: ["HTML", "CSS", "JavaScript", "Canvas"],
+        githubURL: "https://github.com/sarmaakondi/project-1-steampocalypse",
+        liveURL: "https://sarmaakondi.github.io/project-1-steampocalypse/",
+    },
 };
 
 const Work = () => {
@@ -54,6 +62,12 @@ const Work = () => {
                     animate={{ opacity: 1, x: 0, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}>
                     <Project project={projectDetails.worldOfWords} />
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, x: 150, y: 250 }}
+                    animate={{ opacity: 1, x: 0, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}>
+                    <Project project={projectDetails.steampocalypse} />
                 </motion.div>
             </motion.div>
             <motion.div
