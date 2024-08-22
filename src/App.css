@@ -19,3 +19,10 @@
         width: 700px;
     }
 }
+
+@media (max-width: 699px) {
+    .app-container {
+        width: 360px;
+        padding: 64px 30px;
+    }
+}

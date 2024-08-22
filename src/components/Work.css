@@ -3,7 +3,7 @@
     height: fit-content;
     display: flex;
     gap: 32px;
-    padding: 64px 16px;
+    padding: 48px 16px;
     /* border: 1px solid white; */
 }
 
@@ -27,6 +27,17 @@
 }
 
 @media (max-width: 899px) {
+    .work-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 699px) {
+    .work-container {
+        padding: 48px 0;
+        /* border: 1px solid white; */
+    }
+
     .work-item {
         width: 100%;
     }
