@@ -19,3 +19,23 @@
 .all-item-full {
     width: 100%;
 }
+
+@media (max-width: 1279px) {
+    .all-container {
+        flex-direction: column;
+        align-items: center;
+        /* border: 1px solid white; */
+    }
+
+    .all-item,
+    .all-item-full {
+        width: 92%;
+    }
+}
+
+@media (max-width: 899px) {
+    .all-item,
+    .all-item-full {
+        width: 100%;
+    }
+}

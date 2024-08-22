@@ -7,3 +7,15 @@
     margin: 0 auto;
     padding: 64px 40px;
 }
+
+@media (max-width: 1279px) {
+    .app-container {
+        width: 900px;
+    }
+}
+
+@media (max-width: 899px) {
+    .app-container {
+        width: 700px;
+    }
+}

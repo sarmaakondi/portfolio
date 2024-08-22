@@ -13,3 +13,21 @@
     flex-direction: column;
     gap: 32px;
 }
+
+@media (max-width: 1279px) {
+    .work-container {
+        flex-direction: column;
+        align-items: center;
+        /* border: 1px solid white; */
+    }
+
+    .work-item {
+        width: 92%;
+    }
+}
+
+@media (max-width: 899px) {
+    .work-item {
+        width: 100%;
+    }
+}

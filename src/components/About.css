@@ -19,3 +19,23 @@
 .about-item-full {
     width: 100%;
 }
+
+@media (max-width: 1279px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        /* border: 1px solid white; */
+    }
+
+    .about-item,
+    .about-item-full {
+        width: 92%;
+    }
+}
+
+@media (max-width: 899px) {
+    .about-item,
+    .about-item-full {
+        width: 100%;
+    }
+}
