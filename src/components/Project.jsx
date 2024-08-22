@@ -46,7 +46,7 @@ const Job = ({ project }) => {
                     </a>
                     <a
                         href={project.liveURL}
-                        target="_blank"
+                        target={project.liveURL !== "#" ? "_blank" : "_self"}
                         className="project-explore"
                         onMouseEnter={handleExploreEnter}
                         onMouseLeave={handleExploreLeave}>

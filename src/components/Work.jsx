@@ -5,6 +5,7 @@ import Project from "./Project";
 import ExpenseTrackerImage from "../assets/ExpenseTracker.webp";
 import WorldOfWordsImage from "../assets/WorldOfWords.webp";
 import EchoImage from "../assets/Echo.webp";
+import KnowNativeImage from "../assets/KnowNatvie.webp";
 import "./Work.css";
 
 const projectDetails = {
@@ -29,6 +30,13 @@ const projectDetails = {
         tech: ["React", "CSS", "Django", "PostgreSQL"],
         githubURL: "https://github.com/sarmaakondi/echo-client",
         liveURL: "https://echo-client-gry3.onrender.com/feed",
+    },
+    knowNative: {
+        name: "KnowNative",
+        image: KnowNativeImage,
+        tech: ["React", "Express", "CSS", "Bootstrap", "MongoDB"],
+        githubURL: "https://github.com/AbigailDawson/knownative",
+        liveURL: "#",
     },
 };
 
@@ -65,6 +73,12 @@ const Work = () => {
                     animate={{ opacity: 1, x: 0, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}>
                     <Project project={projectDetails.echo} />
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, x: -350, y: -50 }}
+                    animate={{ opacity: 1, x: 0, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}>
+                    <Project project={projectDetails.knowNative} />
                 </motion.div>
             </motion.div>
         </div>
