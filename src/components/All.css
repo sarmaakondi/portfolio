@@ -1,3 +1,21 @@
-.all-title {
-    color: hsl(0, 0%, 98%);
+.all-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 64px 16px;
+    /* border: 1px solid white; */
+}
+
+.all-item,
+.all-item-full {
+    width: 48.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.all-item-full {
+    width: 100%;
 }

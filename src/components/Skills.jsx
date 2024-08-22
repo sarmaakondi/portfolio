@@ -1,12 +1,13 @@
 import StackIcon from "tech-stack-icons";
+import HeartImage from "../assets/heart.png";
 import "./Skills.css";
 
 const Skills = () => {
     return (
         <div className="skills-container">
             <h2>
-                Tech I <span className="skills-emoji">&#128525;</span> and work
-                with
+                Tech I <img className="skills-emoji" src={HeartImage} alt="" />{" "}
+                and work with
             </h2>
             <ul className="skills-list">
                 <div className="skills-icon-container">

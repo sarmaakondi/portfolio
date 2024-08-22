@@ -16,12 +16,13 @@
 
 .skills-emoji {
     display: inline-block;
+    width: 30px;
     cursor: pointer;
     transition: all 0.3s;
 }
 
 .skills-emoji:hover {
-    transform: translateY(-12px);
+    transform: translateY(-12px) scale(1.2);
 }
 
 .skills-list {
