@@ -26,14 +26,6 @@ html {
     scroll-behavior: smooth;
 }
 
-#animated-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    z-index: -1;
-}
-
 #root {
     position: relative;
     z-index: 1;

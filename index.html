@@ -7,7 +7,6 @@
         <title>Sarma Akondi - Portfolio</title>
     </head>
     <body>
-        <div id="animated-background"></div>
         <div id="root"></div>
         <!-- Start Single Page Apps for GitHub Pages -->
         <script type="text/javascript">
@@ -29,30 +28,7 @@
             })(window.location);
         </script>
         <!-- End Single Page Apps for GitHub Pages -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
-        <script>
-            let vantaEffect = VANTA.BIRDS({
-                el: "#animated-background",
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: window.innerHeight,
-                minWidth: window.innerWidth,
-                scale: 1.0,
-                scaleMobile: 1.0,
-                birdSize: 0.3,
-                quantity: 3.0,
-            });
-
-            // Handle window resize
-            window.addEventListener("resize", () => {
-                vantaEffect.setOptions({
-                    minHeight: window.innerHeight,
-                    minWidth: window.innerWidth,
-                });
-            });
-        </script>
+        <script type="module" src="/src/bubbles.js"></script>
         <script type="module" src="/src/main.jsx"></script>
     </body>
 </html>

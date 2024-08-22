@@ -2,14 +2,20 @@
     width: 100%;
     height: fit-content;
     display: flex;
+    flex-wrap: wrap;
     gap: 32px;
     padding: 64px 16px;
     /* border: 1px solid white; */
 }
 
-.about-item {
+.about-item,
+.about-item-full {
     width: 48.5%;
     display: flex;
     flex-direction: column;
     gap: 32px;
+}
+
+.about-item-full {
+    width: 100%;
 }
