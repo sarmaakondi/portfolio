@@ -27,6 +27,7 @@
 
 .project-links-container {
     display: flex;
+    align-items: center;
     gap: 40px;
 }
 
@@ -38,6 +39,7 @@
 .technology-container {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
 }
 
@@ -46,4 +48,22 @@
     padding: 4px 12px;
     background-color: hsl(0, 0%, 80%);
     border-radius: 12px;
+}
+
+@media (max-width: 699px) {
+    .project-links-container {
+        align-items: center;
+    }
+
+    .project-name {
+        font-size: 18px;
+    }
+
+    .project-links-container {
+        gap: 8px;
+    }
+
+    .technology-name {
+        padding: 4px 8px;
+    }
 }

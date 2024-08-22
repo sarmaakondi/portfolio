@@ -2,11 +2,12 @@ import UseAnimations from "react-useanimations";
 import github from "react-useanimations/lib/github";
 import explore from "react-useanimations/lib/explore";
 import "./Project.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Job = ({ project }) => {
     const [isGithubHovered, setIsGithubHovered] = useState(false);
     const [isExploreHovered, setIsExploreHovered] = useState(false);
+    const [size, setSize] = useState(window.innerWidth <= 698 ? 28 : 40);
 
     const handleGithubEnter = () => {
         setIsGithubHovered(true);
@@ -24,6 +25,16 @@ const Job = ({ project }) => {
         setIsExploreHovered(false);
     };
 
+    useEffect(() => {
+        const handleResize = () => {
+            setSize(window.innerWidth <= 698 ? 28 : 40);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
         <div className="project-container">
             <img className="project-image" src={project.image} alt="" />
@@ -39,7 +50,7 @@ const Job = ({ project }) => {
                         <UseAnimations
                             key={isGithubHovered === true}
                             animation={github}
-                            size={40}
+                            size={size}
                             strokeColor="#4a4a4a"
                             autoplay={isGithubHovered}
                         />
@@ -53,7 +64,7 @@ const Job = ({ project }) => {
                         <UseAnimations
                             key={isExploreHovered === true}
                             animation={explore}
-                            size={40}
+                            size={size}
                             strokeColor="#4a4a4a"
                             autoplay={isExploreHovered}
                         />
