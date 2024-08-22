@@ -38,7 +38,9 @@ const Social = () => {
         <div className="social-container">
             <h2>Get in touch</h2>
             <div className="social-links-container">
-                <div
+                <a
+                    href="https://github.com/sarmaakondi"
+                    target="_blank"
                     onMouseEnter={handleGithubHoverEnter}
                     onMouseLeave={handleGithubHoverLeave}>
                     <UseAnimations
@@ -48,8 +50,10 @@ const Social = () => {
                         strokeColor="#181717"
                         autoplay={isGithubHovered}
                     />
-                </div>
-                <div
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/sarmaakondi/"
+                    target="_blank"
                     onMouseEnter={handleLinkedInHoverEnter}
                     onMouseLeave={handleLinkedInHoverLeave}>
                     <UseAnimations
@@ -59,8 +63,9 @@ const Social = () => {
                         strokeColor="#0077B5"
                         autoplay={isLinkedInHovered}
                     />
-                </div>
-                <div
+                </a>
+                <a
+                    href="mailto:sarmaakondivnm@gmail.com"
                     onMouseEnter={handleMailHoverEnter}
                     onMouseLeave={handleMailHoverLeave}>
                     <UseAnimations
@@ -70,7 +75,7 @@ const Social = () => {
                         strokeColor="#D93025"
                         autoplay={isMailHovered}
                     />
-                </div>
+                </a>
             </div>
         </div>
     );
