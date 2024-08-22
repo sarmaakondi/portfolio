@@ -30,19 +30,12 @@ const All = () => {
                     <Project project={projectDetails.expenseTracker} />
                 </motion.div>
                 <motion.div
-                    initial={{ x: 150, y: 250 }}
+                    initial={{ x: -350, y: -50 }}
                     animate={{ x: 0, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}>
-                    <Project project={projectDetails.steampocalypse} />
-                </motion.div>
-                <motion.div
-                    initial={{ x: -500, y: -50 }}
-                    animate={{ x: 0, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}>
-                    <Social />
+                    <Project project={projectDetails.knowNative} />
                 </motion.div>
             </motion.div>
-
             <motion.div
                 className="all-item"
                 initial={{ x: -500, y: -50 }}
@@ -62,10 +55,16 @@ const All = () => {
                     <Project project={projectDetails.worldOfWords} />
                 </motion.div>
                 <motion.div
-                    initial={{ x: -350, y: -50 }}
+                    initial={{ x: 150, y: 250 }}
                     animate={{ x: 0, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}>
-                    <Project project={projectDetails.knowNative} />
+                    <Project project={projectDetails.steampocalypse} />
+                </motion.div>
+                <motion.div
+                    initial={{ x: -500, y: -50 }}
+                    animate={{ x: 0, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}>
+                    <Social />
                 </motion.div>
             </motion.div>
             <motion.div
