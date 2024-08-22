@@ -10,6 +10,7 @@
 }
 
 .skills-container h2 {
+    text-align: center;
     font-size: 32px;
 }
 
@@ -21,4 +22,26 @@
 
 .skills-emoji:hover {
     transform: translateY(-12px);
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    gap: 40px;
+}
+
+.skills-icon-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skills-icon-container li svg {
+    width: 64px;
+    transition: all 0.3s;
+}
+
+.skills-icon-container li svg:hover {
+    transform: translateY(-10px);
 }

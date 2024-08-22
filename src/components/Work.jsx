@@ -13,7 +13,7 @@ const projectDetails = {
     expenseTracker: {
         name: "Expense Tracker",
         image: ExpenseTrackerImage,
-        tech: ["HTML", "CSS", "JavaScript", "Express", "EJS", "MongoDB"],
+        tech: ["HTML", "CSS", "JavaScript", "Node.js", "EJS", "MongoDB"],
         githubURL:
             "https://github.com/sarmaakondi/project-2-expense-tracker/tree/main",
         liveURL: "https://expense-tracker-c7dg.onrender.com/",
@@ -21,7 +21,7 @@ const projectDetails = {
     worldOfWords: {
         name: "World of Words",
         image: WorldOfWordsImage,
-        tech: ["React", "Express", "CSS", "Framer Motion", "MongoDB"],
+        tech: ["React", "Node.js", "CSS", "Framer Motion", "MongoDB"],
         githubURL: "https://github.com/sarmaakondi/word-nerd-herd-client",
         liveURL: "https://world-of-words-client.onrender.com/",
     },
@@ -35,7 +35,7 @@ const projectDetails = {
     knowNative: {
         name: "KnowNative",
         image: KnowNativeImage,
-        tech: ["React", "Express", "CSS", "Bootstrap", "MongoDB"],
+        tech: ["React", "Node.js", "CSS", "Bootstrap", "MongoDB"],
         githubURL: "https://github.com/AbigailDawson/knownative",
         liveURL: "#",
     },
