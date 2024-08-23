@@ -32,7 +32,7 @@ const projectDetails = {
         image: KnowNativeImage,
         tech: ["React", "Node.js", "CSS", "Bootstrap", "MongoDB"],
         githubURL: "https://github.com/AbigailDawson/knownative",
-        liveURL: "#",
+        liveURL: "https://github.com/AbigailDawson/knownative",
     },
     steampocalypse: {
         name: "Steampocalypse",

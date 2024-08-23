@@ -37,7 +37,16 @@ const Job = ({ project }) => {
 
     return (
         <div className="project-container">
-            <img className="project-image" src={project.image} alt="" />
+            <a
+                href={project.liveURL}
+                target="_blank"
+                className="project-image-link">
+                <img
+                    className="project-image"
+                    src={project.image}
+                    alt="project screenshot"
+                />
+            </a>
             <div className="project-name-container">
                 <h2 className="project-name">{project.name}</h2>
                 <div className="project-links-container">
@@ -57,7 +66,7 @@ const Job = ({ project }) => {
                     </a>
                     <a
                         href={project.liveURL}
-                        target={project.liveURL !== "#" ? "_blank" : "_self"}
+                        target="_blank"
                         className="project-explore"
                         onMouseEnter={handleExploreEnter}
                         onMouseLeave={handleExploreLeave}>
