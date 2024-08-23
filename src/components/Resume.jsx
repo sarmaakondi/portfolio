@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import UseAnimations from "react-useanimations";
 import download from "react-useanimations/lib/download";
 import explore from "react-useanimations/lib/explore";
@@ -8,6 +8,7 @@ import "./Resume.css";
 const Resume = () => {
     const [isDownloadHovered, setIsDownloadHovered] = useState(false);
     const [isExploreHovered, setIsExploreHovered] = useState(false);
+    const [size, setSize] = useState(window.innerWidth <= 698 ? 28 : 40);
 
     const handleDownloadHoverEnter = () => {
         setIsDownloadHovered(true);
@@ -25,6 +26,16 @@ const Resume = () => {
         setIsExploreHovered(false);
     };
 
+    useEffect(() => {
+        const handleResize = () => {
+            setSize(window.innerWidth <= 698 ? 28 : 40);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
         <div className="resume-container">
             <div className="resume-header">
@@ -41,7 +52,7 @@ const Resume = () => {
                     <UseAnimations
                         key={isDownloadHovered === true}
                         animation={download}
-                        size={40}
+                        size={size}
                         strokeColor="#4a4a4a"
                         autoplay={isDownloadHovered}
                     />
@@ -55,7 +66,7 @@ const Resume = () => {
                     <UseAnimations
                         key={isExploreHovered === true}
                         animation={explore}
-                        size={40}
+                        size={size}
                         strokeColor="#4a4a4a"
                         autoplay={isExploreHovered}
                     />

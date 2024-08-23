@@ -32,3 +32,17 @@
     display: flex;
     gap: 40px;
 }
+
+@media (max-width: 699px) {
+    .resume-container {
+        padding: 20px 28px;
+    }
+
+    .resume-header h2 {
+        font-size: 18px;
+    }
+
+    .resume-controls-container {
+        gap: 16px;
+    }
+}
