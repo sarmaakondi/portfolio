@@ -9,7 +9,7 @@ const AboutMe = () => {
                 <h2>Sarma Akondi</h2>
             </div>
             <div>
-                <p>
+                <p className="aboutme-summary">
                     I love to build visually pleasing yet functional user
                     interfaces. I recently graduated from the &quot;Software
                     Engineering&quot; bootcamp at &quot;General Assembly&quot;.

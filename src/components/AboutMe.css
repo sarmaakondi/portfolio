@@ -37,3 +37,27 @@
 .aboutme-header h2 {
     font-size: 32px;
 }
+
+@media (max-width: 699px) {
+    .aboutme-container {
+        padding: 40px 24px;
+        gap: 16px;
+    }
+
+    .aboutme-header {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .aboutme-profile-pic {
+        width: 72px;
+    }
+
+    .aboutme-header h2 {
+        font-size: 22px;
+    }
+
+    .aboutme-summary {
+        font-size: 13px;
+    }
+}
