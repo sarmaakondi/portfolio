@@ -19,3 +19,15 @@
     justify-content: space-evenly;
     cursor: pointer;
 }
+
+@media (max-width: 699px) {
+    .social-container {
+        padding: 32px 24px;
+        gap: 8px;
+    }
+
+    .social-container h2 {
+        font-size: 22px;
+        margin: 8px;
+    }
+}

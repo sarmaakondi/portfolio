@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import UseAnimations from "react-useanimations";
 import github from "react-useanimations/lib/github";
 import linkedin from "react-useanimations/lib/linkedin";
@@ -9,6 +9,7 @@ const Social = () => {
     const [isGithubHovered, setIsGithubHovered] = useState(false);
     const [isLinkedInHovered, setIsLinkedInHovered] = useState(false);
     const [isMailHovered, setIsMailHovered] = useState(false);
+    const [size, setSize] = useState(window.innerWidth <= 698 ? 60 : 100);
 
     const handleGithubHoverEnter = () => {
         setIsGithubHovered(true);
@@ -34,6 +35,16 @@ const Social = () => {
         setIsMailHovered(false);
     };
 
+    useEffect(() => {
+        const handleResize = () => {
+            setSize(window.innerWidth <= 698 ? 60 : 100);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
         <div className="social-container">
             <h2>Get in touch</h2>
@@ -46,7 +57,7 @@ const Social = () => {
                     <UseAnimations
                         key={isGithubHovered === true}
                         animation={github}
-                        size={100}
+                        size={size}
                         strokeColor="#181717"
                         autoplay={isGithubHovered}
                     />
@@ -59,7 +70,7 @@ const Social = () => {
                     <UseAnimations
                         key={isLinkedInHovered === true}
                         animation={linkedin}
-                        size={100}
+                        size={size}
                         strokeColor="#0077B5"
                         autoplay={isLinkedInHovered}
                     />
@@ -71,7 +82,7 @@ const Social = () => {
                     <UseAnimations
                         key={isMailHovered === true}
                         animation={mail}
-                        size={100}
+                        size={size}
                         strokeColor="#D93025"
                         autoplay={isMailHovered}
                     />
