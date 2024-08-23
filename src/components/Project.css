@@ -51,6 +51,11 @@
 }
 
 @media (max-width: 699px) {
+    .project-container {
+        gap: 20px;
+        padding: 20px;
+    }
+
     .project-links-container {
         align-items: center;
     }
