@@ -35,6 +35,20 @@ const Job = ({ project }) => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
+    useEffect(() => {
+        if (project.preload && project.image) {
+            const link = document.createElement("link");
+            link.rel = "preload";
+            link.href = project.image;
+            link.as = "image";
+            document.head.appendChild(link);
+
+            return () => {
+                document.head.removeChild(link);
+            };
+        }
+    }, [project.preload, project.image]);
+
     return (
         <div className="project-container">
             <a
@@ -43,8 +57,19 @@ const Job = ({ project }) => {
                 className="project-image-link">
                 <img
                     className="project-image"
-                    src={project.image}
+                    src={project.imageMobile}
+                    srcSet={`
+                        ${project.imageWide} 1280w,
+                        ${project.imageMedium} 900w,
+                        ${project.imageTablet} 700w,
+                        ${project.imageMobile} 360w
+                    `}
+                    sizes="(max-width: 360px) 360px,
+                           (max-width: 699px) 700px,
+                           (max-width: 899px) 900px,
+                           1280px"
                     alt="project screenshot"
+                    fetchPriority={project.preload ? "high" : "auto"}
                 />
             </a>
             <div className="project-name-container">
