@@ -5,7 +5,11 @@ const AboutMe = () => {
     return (
         <div className="aboutme-container">
             <div className="aboutme-header">
-                <img className="aboutme-profile-pic" src={ProfilePic} />
+                <img
+                    className="aboutme-profile-pic"
+                    src={ProfilePic}
+                    alt="profile picture"
+                />
                 <h2>Sarma Akondi</h2>
             </div>
             <div>
