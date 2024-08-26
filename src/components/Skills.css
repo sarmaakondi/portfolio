@@ -43,8 +43,24 @@
     transition: all 0.3s;
 }
 
+.skill-icon {
+    width: 100px;
+}
+
 .skills-icon-container li svg:hover {
     transform: translateY(-10px);
+}
+
+@media (max-width: 1279px) {
+    .skill-icon {
+        width: 80px;
+    }
+}
+
+@media (max-width: 899px) {
+    .skill-icon {
+        width: 60px;
+    }
 }
 
 @media (max-width: 699px) {
@@ -69,5 +85,9 @@
     .skills-icon-container li svg {
         width: 36px;
         transition: all 0.3s;
+    }
+
+    .skill-icon {
+        width: 40px;
     }
 }

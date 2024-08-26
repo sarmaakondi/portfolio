@@ -1,4 +1,7 @@
-import ProfilePic from "../assets/ProfilePic.webp";
+import ProfilePictureWide from "../assets/profilePictureWide.webp";
+import ProfilePictureMedium from "../assets/profilePictureMedium.webp";
+import ProfilePictureTablet from "../assets/profilePictureTablet.webp";
+import ProfilePictureMobile from "../assets/profilePictureMobile.webp";
 import "./AboutMe.css";
 
 const AboutMe = () => {
@@ -7,7 +10,17 @@ const AboutMe = () => {
             <div className="aboutme-header">
                 <img
                     className="aboutme-profile-pic"
-                    src={ProfilePic}
+                    src={ProfilePictureMobile}
+                    srcSet={`
+                        ${ProfilePictureWide} 1280w,
+                        ${ProfilePictureMedium} 900w,
+                        ${ProfilePictureTablet} 700w,
+                        ${ProfilePictureMobile} 360w
+                    `}
+                    sizes="(max-width: 360px) 360px,
+                           (max-width: 699px) 700px,
+                           (max-width: 899px) 900px,
+                           1280px"
                     alt="profile picture"
                 />
                 <h2>Sarma Akondi</h2>

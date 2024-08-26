@@ -69,7 +69,8 @@ const Job = ({ project }) => {
                            (max-width: 899px) 900px,
                            1280px"
                     alt="project screenshot"
-                    fetchPriority={project.preload ? "high" : "auto"}
+                    // eslint-disable-next-line react/no-unknown-property
+                    fetchpriority={project.preload ? "high" : "auto"}
                 />
             </a>
             <div className="project-name-container">
