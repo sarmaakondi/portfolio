@@ -38,16 +38,12 @@
     justify-content: space-evenly;
 }
 
-.skills-icon-container li svg {
-    width: 52px;
+.skill-icon {
+    width: 100px;
     transition: all 0.3s;
 }
 
-.skill-icon {
-    width: 100px;
-}
-
-.skills-icon-container li svg:hover {
+.skill-icon:hover {
     transform: translateY(-10px);
 }
 
@@ -80,11 +76,6 @@
 
     .skills-emoji {
         width: 20px;
-    }
-
-    .skills-icon-container li svg {
-        width: 36px;
-        transition: all 0.3s;
     }
 
     .skill-icon {
