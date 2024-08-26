@@ -80,13 +80,15 @@ const Job = ({ project }) => {
                         target="_blank"
                         className="project-github"
                         onMouseEnter={handleGithubEnter}
-                        onMouseLeave={handleGithubLeave}>
+                        onMouseLeave={handleGithubLeave}
+                        aria-label={`View ${project.name} on GitHub`}>
                         <UseAnimations
                             key={isGithubHovered === true}
                             animation={github}
                             size={size}
                             strokeColor="#4a4a4a"
                             autoplay={isGithubHovered}
+                            aria-hidden="true"
                         />
                     </a>
                     <a
@@ -94,13 +96,15 @@ const Job = ({ project }) => {
                         target="_blank"
                         className="project-explore"
                         onMouseEnter={handleExploreEnter}
-                        onMouseLeave={handleExploreLeave}>
+                        onMouseLeave={handleExploreLeave}
+                        aria-label={`View ${project.name} on live`}>
                         <UseAnimations
                             key={isExploreHovered === true}
                             animation={explore}
                             size={size}
                             strokeColor="#4a4a4a"
                             autoplay={isExploreHovered}
+                            aria-hidden="true"
                         />
                     </a>
                 </div>

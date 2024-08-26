@@ -48,13 +48,15 @@ const Resume = () => {
                     download
                     className="resume-download"
                     onMouseEnter={handleDownloadHoverEnter}
-                    onMouseLeave={handleDownloadHoverLeave}>
+                    onMouseLeave={handleDownloadHoverLeave}
+                    aria-label="Download latest resume">
                     <UseAnimations
                         key={isDownloadHovered === true}
                         animation={download}
                         size={size}
                         strokeColor="#4a4a4a"
                         autoplay={isDownloadHovered}
+                        aria-hidden="true"
                     />
                 </a>
                 <a
@@ -62,13 +64,15 @@ const Resume = () => {
                     target="_blank"
                     className="resume-explore"
                     onMouseEnter={handleExploreHoverEnter}
-                    onMouseLeave={handleExploreHoverLeave}>
+                    onMouseLeave={handleExploreHoverLeave}
+                    aria-label="View latest resume">
                     <UseAnimations
                         key={isExploreHovered === true}
                         animation={explore}
                         size={size}
                         strokeColor="#4a4a4a"
                         autoplay={isExploreHovered}
+                        aria-hidden="true"
                     />
                 </a>
             </div>

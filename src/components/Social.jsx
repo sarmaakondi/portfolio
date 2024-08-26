@@ -53,38 +53,44 @@ const Social = () => {
                     href="https://github.com/sarmaakondi"
                     target="_blank"
                     onMouseEnter={handleGithubHoverEnter}
-                    onMouseLeave={handleGithubHoverLeave}>
+                    onMouseLeave={handleGithubHoverLeave}
+                    aria-label="Open my GitHub profile">
                     <UseAnimations
                         key={isGithubHovered === true}
                         animation={github}
                         size={size}
                         strokeColor="#181717"
                         autoplay={isGithubHovered}
+                        aria-hidden="true"
                     />
                 </a>
                 <a
                     href="https://www.linkedin.com/in/sarmaakondi/"
                     target="_blank"
                     onMouseEnter={handleLinkedInHoverEnter}
-                    onMouseLeave={handleLinkedInHoverLeave}>
+                    onMouseLeave={handleLinkedInHoverLeave}
+                    aria-label="Open my LinkedIn profile">
                     <UseAnimations
                         key={isLinkedInHovered === true}
                         animation={linkedin}
                         size={size}
                         strokeColor="#0077B5"
                         autoplay={isLinkedInHovered}
+                        aria-hidden="true"
                     />
                 </a>
                 <a
                     href="mailto:sarmaakondivnm@gmail.com"
                     onMouseEnter={handleMailHoverEnter}
-                    onMouseLeave={handleMailHoverLeave}>
+                    onMouseLeave={handleMailHoverLeave}
+                    aria-label="Send me an email for queries">
                     <UseAnimations
                         key={isMailHovered === true}
                         animation={mail}
                         size={size}
                         strokeColor="#D93025"
                         autoplay={isMailHovered}
+                        aria-hidden="true"
                     />
                 </a>
             </div>
