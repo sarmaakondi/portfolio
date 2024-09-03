@@ -1,4 +1,4 @@
-import{j as A,g as m,r as n}from"./index-CnA4H5v8.js";import{U as r,g as b}from"./motion-JZzerfwO.js";const h="/portfolio/assets/profilePictureWide-BgSnXAcZ.webp",D="/portfolio/assets/profilePictureMedium-FLUkb06c.webp",C="/portfolio/assets/profilePictureTablet-CzmJU04Y.webp",x="/portfolio/assets/profilePictureMobile-f1ylVKGX.webp",u0=()=>A.jsxs("div",{className:"aboutme-container",children:[A.jsxs("div",{className:"aboutme-header",children:[A.jsx("img",{className:"aboutme-profile-pic",src:x,srcSet:`
+import{j as A,g as m,r as n}from"./index-mYZgI-fC.js";import{U as r,g as b}from"./motion-CoXyIP5_.js";const h="/portfolio/assets/profilePictureWide-BgSnXAcZ.webp",D="/portfolio/assets/profilePictureMedium-FLUkb06c.webp",C="/portfolio/assets/profilePictureTablet-CzmJU04Y.webp",x="/portfolio/assets/profilePictureMobile-f1ylVKGX.webp",u0=()=>A.jsxs("div",{className:"aboutme-container",children:[A.jsxs("div",{className:"aboutme-header",children:[A.jsx("img",{className:"aboutme-profile-pic",src:x,srcSet:`
                         ${h} 1280w,
                         ${D} 900w,
                         ${C} 700w,
